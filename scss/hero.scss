@@ -1,0 +1,33 @@
+.hero {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+    height: 60vh;
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      .title {
+        h1 {
+          @include gradientText;
+          font-size: 6vw;
+        }
+      }
+    }
+    .image {
+      position: relative;
+      img {
+        position: absolute;
+        filter: brightness(60%);
+        left: 17vh;
+        bottom: 0;
+        height: 56vh;
+        width: 23vw;
+        background-color:rgb(18 14 14 / 69%);
+        object-fit: cover;
+     
+      }
+    }
+  } 
